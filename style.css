@@ -134,3 +134,26 @@ html body {
     margin: 20px 0;
     font-weight: bold;
 }
+
+@media (max-width: 600px) { /* Media query for screens up to 600px wide (typical mobile screens) */
+    .card {
+        max-width: 100%; /* Full width on smaller screens */
+        border-radius: 0; /* Remove border-radius on smaller screens */
+    }
+
+    .rating-button {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .rounded-button {
+        width: 80%;
+    }
+
+    .thank-you-card {
+        padding: 10px;
+        border-radius: 0;
+    }
+}
