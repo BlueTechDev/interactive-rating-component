@@ -1,0 +1,136 @@
+/* Common styles for both desktop and mobile */
+html body {
+    background-color: #141518;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    position: relative;
+    background-color: #1f252f;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 35px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+}
+
+.logo-img {
+    border: 0px solid #4a505b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.card h2 {
+    color: #fff;
+    padding-right: 100px;
+}
+
+.card p {
+    color: #4a505b;
+}
+
+.card-content {
+    margin: 20px 0;
+}
+
+.rating-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.rating-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4a505b;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+}
+
+.rating-button:hover {
+    opacity: .5;
+    background-color: #ffa0af;
+}
+
+.rating-button[value] {
+    opacity: .3;
+    color: #fff;
+}
+
+.rating-button.selected {
+    background-color: #fb7615;
+    opacity: 1;
+}
+
+#submit-btn {
+    background-color: #fb7615;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .3s;
+    max-width: 90%;
+    margin: 3 auto;
+    display: block;
+}
+
+#submit-btn:hover {
+    background-color: #ffa0af;
+    opacity: 1;
+}
+
+.thank-you-card {
+    display: none; /* Hide the thank you card by default */
+}
+
+#thank-you-card h1 {
+    color: #fff;
+}
+
+#selected-rating, .hidden {
+    color: #fb7615;
+}
+
+.rounded-button {
+    order: 1;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fb7615;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+.rounded-button:hover {
+    opacity: .6;
+    background-color: #ffa0af;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Additional styles for the selected rating display */
+#selected-rating {
+    color: #4a505b;
+    margin: 20px 0;
+    font-weight: bold;
+}
